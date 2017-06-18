@@ -1,3 +1,5 @@
+## This fork is like pre-pre-pre-alpha. Like only I am using it and if you are wow. I'm not sure if I intend on maintaining it so there are no guarantees. There are mistakes, let me know thanks!
+
 <img src="https://github.com/adapta-project/adapta-github-resources/blob/master/images/logo_thumb.png" alt="Logo" align="left" /> Adapta-gtk-theme
 ======
 
@@ -228,7 +230,7 @@ Installation from Git Source
 7. To change the default 5 **Key-Colors**, pass these options:
 
  ```
- --with-selection_color        Primary color for 'selected-items' (Default: #00BCD4 = Cyan500, type: int)
+ --with-selection_color        Primary color for 'selected-items' (Default: #f5f5f5 = Cyan500, type: int)
  --with-second_selection_color Primary color for 'select' effects (Default: #4DD0E1 = Cyan300, type: int)
  --with-accent_color           Secondary color for notifications and OSDs (Default: #4DB6AC = Teal300, type: int)
  --with-suggestion_color       Secondary color for 'suggested' buttons (Default: #009688 = Teal500, type: int)
@@ -277,10 +279,10 @@ Extra Browser Support
  >
  >   * Vivaldi can make custom themes via settings like these:
  >     ```
- >     Background: #FAFBFC (#263238)
- >     Foreground: #263238 (#CFD8DC)
- >     Highlight:  #00BCD4
- >     Accent:     #222D32
+ >     Background: #FAFBFC (#363636)
+ >     Foreground: #363636 (#E0E0E0)
+ >     Highlight:  #f5f5f5
+ >     Accent:     #424242
  >     Accent Color from Active Page: [ ]
  >     Apply Accent Color to Window:  [*]
  >     Transparent Tabs:              [*]

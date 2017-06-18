@@ -18,7 +18,7 @@ AC_DEFUN([ADAPTA_COLOR_SCHEME], [
         [AS_HELP_STRING(
             [--with-selection_color],
             [Primary color for selected-items \
-             (Default: #00BCD4 (Cyan500))]
+             (Default: #f5f5f5 (Cyan500))]
         )],
         [SELECTION="$withval"],
         [SELECTION=$selection_default]

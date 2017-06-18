@@ -115,7 +115,7 @@
        cy="1019.4822"
        r="30" />
     <ellipse
-       style="opacity:1;fill:#00BCD4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:9.60499954;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:0.75"
+       style="opacity:1;fill:#f5f5f5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:9.60499954;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:478.43673706;stroke-opacity:0.75"
        id="path5326"
        cx="36.000072"
        cy="1016.3622"
@@ -123,7 +123,7 @@
        rx="30.000067" />
     <path
        id="path4778-0"
-       style="fill:none;fill-opacity:0;fill-rule:evenodd;stroke:#cfd8dc;stroke-width:6;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:0;fill-rule:evenodd;stroke:#E0E0E0;stroke-width:6;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 23.854117,1004.5682 c 23.939674,23.9398 23.939674,23.9398 23.939674,23.9398 m -23.939674,0 c 23.939674,-23.9398 23.939674,-23.9398 23.939674,-23.9398"
        inkscape:connector-curvature="0" />
     <ellipse
