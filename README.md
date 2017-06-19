@@ -1,4 +1,12 @@
-## This fork is like pre-pre-pre-alpha. Like only I am using it and if you are wow. I'm not sure if I intend on maintaining it so there are no guarantees. There are mistakes, let me know thanks!
+## This fork so alpha I'm not sure you should even use it. No guarantees. That being said I've taken and forked the fantastic,
+wonderfully written to be compact and beautiful Adapta theme and changed only the Nokto dark version to be a mono/dark black
+version of Adapta I'm calling Adaptdark at least for now.
+
+### Please note that the install instructions below have not been updated, you need to download this repository and copy the folder to ~/.themes or /usr/share/themes and then it should appear in Gnome Tweak Tool. Also of note is the fact that I have tested by changes to Adapta on anything but Gnome 3.24 on Fedora 26 and Debian Stretch.
+
+### Feel free to tell me what is terrible, suggest any changes with a pull request and I'll do my best to help out. Happy computing!
+
+- Jayarc
 
 <img src="https://github.com/adapta-project/adapta-github-resources/blob/master/images/logo_thumb.png" alt="Logo" align="left" /> Adapta-gtk-theme
 ======
