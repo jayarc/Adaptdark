@@ -2,7 +2,7 @@
 
 ### Please note that the install instructions below have not been updated, you need to download this repository and copy the folder to ~/.themes or /usr/share/themes and then it should appear in Gnome Tweak Tool. Also of note is the fact that I have tested by changes to Adapta on anything but Gnome 3.24 on Fedora 26 and Debian Stretch.
 
-### Of course I would like to thank Tista(tista500) the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it.
+### I would like to thank Tista(tista500) the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it.
 
 ### Feel free to tell me what is terrible, suggest any changes with a pull request and I'll do my best to help out. Happy computing!
 
