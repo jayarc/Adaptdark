@@ -2,7 +2,7 @@
 
 ### Please note that the install instructions below have not been updated, you need to download this repository and copy the folder to ~/.themes or /usr/share/themes and then it should appear in Gnome Tweak Tool. Also of note is the fact that I have tested by changes to Adapta on anything but Gnome 3.24 on Fedora 26 and Debian Stretch.
 
-### Of course I would like to thank Tista(tista500) the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it. 
+### Of course I would like to thank Tista(tista500) the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it.
 
 ### Feel free to tell me what is terrible, suggest any changes with a pull request and I'll do my best to help out. Happy computing!
 
@@ -11,10 +11,75 @@
 <img src="https://github.com/adapta-project/adapta-github-resources/blob/master/images/logo_thumb.png" alt="Logo" align="left" /> Adapta-gtk-theme
 ======
 
-An adaptive Gtk+ theme based on Material Design Guidelines.
 
-Before using Adapta
--------------------
+
+
+Installation from Git Source (for the Adaptdark you need to install using this method, no build packages are available yet)
+----------------------------
+1. If previous versions were installed/existed, remove them first.
+
+ ```
+ sudo rm -rf /usr/share/themes/{Adapta,Adapta-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
+ rm -rf ~/.local/share/themes/{Adapta,Adapta-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
+ rm -rf ~/.themes/{Adapta,Adapta-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
+ ```
+
+2. Check build-requirements:
+ Currently Adapta bundles neither pre-generated stylesheets nor PNG images.
+ So users and/or contributors should generate proper CSSs, PNGs and gresources at build-time.
+
+ ```
+ * autoconf
+ * automake
+ * inkscape                                  >= 0.91
+ * libgdk-pixbuf2.0-dev (gdk-pixbuf2-devel)  >= 2.32.2
+ * libglib2.0-dev (glib2-devel)              >= 2.48.0
+ * librsvg2-dev (librsvg2-devel)             >= 2.40.13
+ * libsass0 (libsass)                        >= 3.3
+ * libxml2-utils (libxml2)
+ * pkg-config (pkgconfig)
+ * sassc                                     >= 3.3
+ ```
+
+ > **Note:**
+ >
+ >   * In OpenSUSE, add 3 extra dependencies:
+ >
+ >     ```
+ >     gdk-pixbuf-devel        >= 2.32.2
+ >     gdk-pixbuf-loader-rsvg  >= 2.40.13
+ >     librsvg-devel           >= 2.40.13
+ >     ```
+ >
+ >   * Adapta employs **SassC** wrapper of `libsass` to generate CSS stylesheets.
+ >   * Adapta uses `inkscape` to generate installable PNG files.
+ >   * Adapta uses `glib-compile-resources` to compile the gresource files for Gtk+ and Gnome-Shell.
+
+3. Build and install system-wide:
+
+ ```
+ ./autogen.sh
+ make
+ sudo make install
+ ```
+
+ > **Note:**
+ >
+ >   * Default prefix is `/usr`.
+ >   * All 4 variants are installed by default.
+ >   * `make` generates proper CSSs and PNGs to be installed.
+ >     It will take about 5min to 15min to build.
+ >     For example, Ubuntu's build-server takes 10min.
+ >   * `sudo make install` installs multiple versioned theme and Gtk+ automatically selects the properly versioned one when running.
+
+4. To speed up by using concurrency-build, pass this specific option to `autogen.sh`:
+
+ ```
+ --enable-parallel       enable parallel-build support (type: bool)
+
+
+
+
 
 Adapta strongly depends on Material Design resources, especially its **fonts**.
 
@@ -127,82 +192,7 @@ Unsupported Gtk+ Based Desktop(s)
  >
  >   * Adapta does NOT support elementaryOS.
 
-Installation from Package(s)
-----------------------------
- * AUR: https://aur.archlinux.org/packages/adapta-gtk-theme/
 
- * Copr: https://copr.fedorainfracloud.org/coprs/heikoada/gtk-themes/
-
- * OBS (openSUSE Tumbleweed): https://build.opensuse.org/package/show/home:Ronis_BR/adapta-gtk-theme
-
- * PPA: https://launchpad.net/~tista/+archive/ubuntu/adapta
-
- > **Note:**
- >
- >   * Solus OS has an eopkg (ypkg) in main repository.
-
-Installation from Git Source
-----------------------------
-1. If previous versions were installed/existed, remove them first.
-
- ```
- sudo rm -rf /usr/share/themes/{Adapta,Adapta-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
- rm -rf ~/.local/share/themes/{Adapta,Adapta-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
- rm -rf ~/.themes/{Adapta,Adapta-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
- ```
-
-2. Check build-requirements:
- Currently Adapta bundles neither pre-generated stylesheets nor PNG images.
- So users and/or contributors should generate proper CSSs, PNGs and gresources at build-time.
-
- ```
- * autoconf
- * automake
- * inkscape                                  >= 0.91
- * libgdk-pixbuf2.0-dev (gdk-pixbuf2-devel)  >= 2.32.2
- * libglib2.0-dev (glib2-devel)              >= 2.48.0
- * librsvg2-dev (librsvg2-devel)             >= 2.40.13
- * libsass0 (libsass)                        >= 3.3
- * libxml2-utils (libxml2)
- * pkg-config (pkgconfig)
- * sassc                                     >= 3.3
- ```
-
- > **Note:**
- >
- >   * In OpenSUSE, add 3 extra dependencies:
- >
- >     ```
- >     gdk-pixbuf-devel        >= 2.32.2
- >     gdk-pixbuf-loader-rsvg  >= 2.40.13
- >     librsvg-devel           >= 2.40.13
- >     ```
- >
- >   * Adapta employs **SassC** wrapper of `libsass` to generate CSS stylesheets.
- >   * Adapta uses `inkscape` to generate installable PNG files.
- >   * Adapta uses `glib-compile-resources` to compile the gresource files for Gtk+ and Gnome-Shell.
-
-3. Build and install system-wide:
-
- ```
- ./autogen.sh
- make
- sudo make install
- ```
-
- > **Note:**
- >
- >   * Default prefix is `/usr`.
- >   * All 4 variants are installed by default.
- >   * `make` generates proper CSSs and PNGs to be installed.
- >     It will take about 5min to 15min to build.
- >     For example, Ubuntu's build-server takes 10min.
- >   * `sudo make install` installs multiple versioned theme and Gtk+ automatically selects the properly versioned one when running.
-
-4. To speed up by using concurrency-build, pass this specific option to `autogen.sh`:
-
- ```
- --enable-parallel       enable parallel-build support (type: bool)
  ```
 
  > **Note:**
@@ -329,21 +319,6 @@ Extra Telegram Support
  The installer installs compressed `tdesktop-theme` files into `Adapta/telegram` and `Adapta-Nokto/telegram` directories if Telegram support is enabled.
  Then open the file via Telegram > Main Menu > Settings > Chat background > Choose from file.
 
- > **Note:**
- >
- >   * The `adapta.tdesktop-theme` is for light-variant, and `adapta-nokto.tdesktop-theme` is for dark-variant.
- >   * Bundled noise-texture images are for *tiled* mode.
- >   * Telegram support is a W.I.P currently.
-
-Work in Progress
-----------------
-* Conversion to Gtk+ 4.0
-
-TODO
-----
-* Move Gtk+ 3.18.x theming to legacy (priority: Mid)
-* Prepare for Steam theming (priority: Low)
-* Add Firefox specific theming (priority: undecided)
 
 Public License
 --------------
@@ -352,7 +327,3 @@ Public License
  > **Note:**
  >
  > SVG files are licensed under CC BY-SA 4.0
-
-Special Thanks to
---------------
- Nana-4, the developer of Flat-Plat.
