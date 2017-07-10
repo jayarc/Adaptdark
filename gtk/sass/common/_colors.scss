@@ -34,7 +34,6 @@ $md-grey-400 : #bdbdbd;
 $md-grey-500 : #333;
 $md-grey-600 : #757575;
 $md-grey-700 : #616161;
-$md-grey-700 : #616161;
 $md-grey-800 : #424242;
 $md-grey-900 : #2d2d2d;
 $md-grey-950 : #1c1c1c;
@@ -94,13 +93,13 @@ $base_color: if($variant == 'light',
 $secondary_base_color: mix($base_color, $bg_color, 50%);        // = W _ 50
 $light_color: if($variant == 'light',
                  $base_color,                                   // = White
-                 mix($md-grey-900, $md-grey-800, 50%));                   // = 900 _ 800
+                 $md-grey-900);                   // = 900 _ 800
 $dark_color: if($variant == 'light',
                 mix($md-grey-100, $md-grey-200, 75%),                     // =  50 _ 100
-                mix($md-grey-900, #000000, 90%));                    // = 900 _ Blk
+                $md-grey-950);                    // = 900 _ Blk
 $secondary_dark_color: if($variant == 'light',
                           mix(#FFFFFF, $md-grey-100, 60%),           // = W _ 50
-                          mix($md-grey-900, #000000, 95%));          // = 900 _ Blk
+                          $md-grey-950);          // = 900 _ Blk
 
 
 //
@@ -183,9 +182,9 @@ $suggested_color: $key_suggestion_color;
 // Default: #FF5252                                             // = RedA200
 $destructive_color: $key_destruction_color;
 
-$info_bg_color: #00E5FF;                                        // = CyanA400
-$question_bg_color: #FFEA00;                                    // = YellwA400
-$warning_bg_color: #FF9100;                                     // = OrangA400
+$info_bg_color: $md-grey-700;                                        // = CyanA400
+$question_bg_color: $md-grey-400;                                    // = YellwA400
+$warning_bg_color: $md-grey-300;                                     // = OrangA400
 $error_bg_color: #FF1744;                                       // = RedA400
 
 

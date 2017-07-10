@@ -1,6 +1,4 @@
-## This fork is an alpha that is very new, there are no guarantees! That being said I've taken and forked the fantastic, wonderfully written to be compact and beautiful Adapta theme and changed only the Nokto dark version to be a mono/dark black version of Adapta I'm calling Adaptdark at least for now.
-
-### Please note that the install instructions below have not been updated, you need to download this repository and copy the folder to ~/.themes or /usr/share/themes and then it should appear in Gnome Tweak Tool. Also of note is the fact that I have tested by changes to Adapta on anything but Gnome 3.24 on Fedora 26 and Debian Stretch.
+## This repository is very alpha, there are no guarantees as thing are very new.
 
 ### I would like to thank Tista(tista500) the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it.
 
@@ -14,7 +12,7 @@
 
 
 
-Installation from Git Source (for the Adaptdark you need to install using this method, no build packages are available yet)
+Installation from Git Source (for the Adaptdark version you need to install using this method, no built packages are available yet)
 ----------------------------
 1. If previous versions were installed/existed, remove them first.
 
@@ -56,6 +54,8 @@ Installation from Git Source (for the Adaptdark you need to install using this m
  >   * Adapta uses `glib-compile-resources` to compile the gresource files for Gtk+ and Gnome-Shell.
 
 3. Build and install system-wide:
+
+### For building Adaptdark you can modify regen.sh with your own username/paths and run ./regen.sh in the project folder to do an entire build quickly and get a notification when it's finished.
 
  ```
  ./autogen.sh
