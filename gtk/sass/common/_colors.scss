@@ -36,7 +36,9 @@ $md-grey-600 : #757575;
 $md-grey-700 : #616161;
 $md-grey-800 : #424242;
 $md-grey-900 : #2d2d2d;
-$md-grey-950 : #1c1c1c;
+$md-grey-950 : #252525;
+$md-grey-975 : #1c1c1c;
+
 
 //
 // Foreground colors
@@ -108,7 +110,7 @@ $secondary_dark_color: if($variant == 'light',
 
 $inverted_bg_color: $md-grey-900;                                    // = BluGry900
 $inverted_base_color: mix($md-grey-900, $md-grey-800, 85%);               // = 900 _ 800
-$inverted_dark_color: mix($md-grey-950, #000000, 90%);               // = 900 _ Blk
+$inverted_dark_color: mix($md-grey-975, #000000, 90%);               // = 900 _ Blk
 
 
 //

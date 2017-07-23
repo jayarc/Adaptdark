@@ -1,10 +1,10 @@
-## This repository is very alpha, there are no guarantees as thing are very new.
+## This repository is a very new fork, it will probably work for you but there are no guarantees and I'm not currently "supporting" the theme in a more official manner, although I intend to in the future, things here are still very much a work in progress.
 
-### I would like to thank Tista(tista500) the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it.
+### I would like to thank Tista(tista500), the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it. All I'm really doing with this fork is to make a "mono" or "greyscale" version of the Adapta theme, I'm merely changing a couple of colors in the common colors Sass files.
 
-### Feel free to tell me what is terrible, suggest any changes with a pull request and I'll do my best to help out. Happy computing!
+### Feel free to tell me what is terrible, suggest any changes you'd like to see included with a pull request and I'll do my best to support the needs of folks using the theme.
 
-- Jayarc
+- JayArc
 
 <img src="https://github.com/adapta-project/adapta-github-resources/blob/master/images/logo_thumb.png" alt="Logo" align="left" /> Adapta-gtk-theme
 ======
@@ -56,6 +56,8 @@ Installation from Git Source (for the Adaptdark version you need to install usin
 3. Build and install system-wide:
 
 ### For building Adaptdark you can modify regen.sh with your own username/paths and run ./regen.sh in the project folder to do an entire build quickly and get a notification when it's finished.
+
+## If you are using the regen.sh file mentioned above you do not need to do the ./autoge.sh, make and sudo make install mentioned below here. I've added the regen.sh file as a shortcut to rebuild a theme after changes have been made. You can also not use regen.sh and just do the three commands below, it's and either or situation ;)
 
  ```
  ./autogen.sh
