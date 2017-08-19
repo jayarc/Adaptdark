@@ -71,7 +71,7 @@ Installation from Git Source (for the `k version you need to install using this 
 
 ##### For building Adaptdark you can modify regen.sh with your own username/paths and run ./regen.sh in the project folder to do an entire build quickly and get a notification when it's finished.
 
-###### you are using the regen.sh file mentioned above you do not need to do the ./autogen.sh, make, and sudo make install mentioned below. I've (jayarc/adaptdark) added the regen.sh file as a shortcut to rebuild a theme after changes have been made. You can also not use regen.sh and just use the three commands below, it's an either or situation ;)
+###### If you are using the regen.sh file mentioned above you do not need to do the ./autogen.sh, make, and sudo make install mentioned below. I've (jayarc/adaptdark) added the regen.sh file as a shortcut to rebuild a theme after changes have been made. You can also not use regen.sh and just use the three commands below, it's an either or situation ;)
 
  ```
  ./autogen.sh
