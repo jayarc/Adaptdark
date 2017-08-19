@@ -2,11 +2,16 @@
 
 ### Screenshots
 
-![Alt text](/screenshots/info.png?raw=true "Info")
+![Alt text](/screenshots/main.png?raw=true "Main")
 ![Alt text](/screenshots/shell.png?raw=true "Shell")
 ![Alt text](/screenshots/applications.png?raw=true "Applications")
 ![Alt text](/screenshots/settings.png?raw=true "Settings")
 ![Alt text](/screenshots/osd.png?raw=true "Shell Overlay")
+
+### Features & Setup details
+
+* All mono black and white theme, lightweight.
+* 
 
 
 - JayArc
