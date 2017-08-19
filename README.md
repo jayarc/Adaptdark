@@ -7,10 +7,15 @@
 ![Alt text](/screenshots/applications.png?raw=true "Applications")
 ![Alt text](/screenshots/settings.png?raw=true "Settings")
 
-### Features & Setup details
+### Features / Details / Instructions
 
+* This theme is a minor fork for color of [Adapta](https://github.com/adapta-project/adapta-gtk-theme) by [Tista500](https://github.com/tista500), whom did nearly all the work. If you enjoy this thank him or her. Wonderful work in keeping the size down Tista.
 * All mono black and white theme, lightweight.
-* 
+* Use Adapta-Nokto for darkest look pictured, non-Nokto for a white and black theme.
+* Use [Sardi-Mono-Vertexed](https://sourceforge.net/projects/sardi/files/) from the Sardi icons theme to get the icons
+* Change your font in Gnome Tweak Tool to DejaVu Sans Book
+* Firefox theme in screenshots is ["Not Quite Black"](https://addons.mozilla.org/en-us/firefox/addon/not-quite-black/)
+* The wallpaper is a [photo of Lake Lucerne](https://interfacelift.com/wallpaper/details/4126/the_overlook_of_lake_lucern.html).
 
 
 - JayArc
