@@ -1,8 +1,10 @@
-## This repository is a very new fork, it will probably work for you but there are no guarantees and I'm not currently "supporting" the theme in a more official manner, although I intend to in the future, things here are still very much a work in progress.
+## Adaptdark is a dark / black / flat Gnome Shell, GTK3, GTK2 and other WM theme for linux based on Adapta.
 
-### I would like to thank Tista(tista500), the creator of Adapta for putting the time in to make a great theme and also to Nana-4 for creating Flat-Plat before it. All I'm really doing with this fork is to make a "mono" or "greyscale" version of the Adapta theme, I'm merely changing a couple of colors in the common colors Sass files.
+### Screenshots
 
-### Feel free to tell me what is terrible, suggest any changes you'd like to see included with a pull request and I'll do my best to support the needs of folks using the theme.
+![Alt text](/screenshots/info.png?raw=true "Info")
+![Alt text](/screenshots/shell.png?raw=true "Shell")
+![Alt text](/screenshots/applications.png?raw=true "Applications")
 
 - JayArc
 
@@ -12,7 +14,7 @@
 
 
 
-Installation from Git Source (for the Adaptdark version you need to install using this method, no built packages are available yet)
+Installation from Git Source (for the `k version you need to install using this method, no built packages are available yet)
 ----------------------------
 1. If previous versions were installed/existed, remove them first.
 
@@ -55,9 +57,9 @@ Installation from Git Source (for the Adaptdark version you need to install usin
 
 3. Build and install system-wide:
 
-### For building Adaptdark you can modify regen.sh with your own username/paths and run ./regen.sh in the project folder to do an entire build quickly and get a notification when it's finished.
+##### For building Adaptdark you can modify regen.sh with your own username/paths and run ./regen.sh in the project folder to do an entire build quickly and get a notification when it's finished.
 
-## If you are using the regen.sh file mentioned above you do not need to do the ./autogen.sh, make, and sudo make install mentioned below. I've (jayarc/adaptdark) added the regen.sh file as a shortcut to rebuild a theme after changes have been made. You can also not use regen.sh and just use the three commands below, it's an either or situation ;)
+###### you are using the regen.sh file mentioned above you do not need to do the ./autogen.sh, make, and sudo make install mentioned below. I've (jayarc/adaptdark) added the regen.sh file as a shortcut to rebuild a theme after changes have been made. You can also not use regen.sh and just use the three commands below, it's an either or situation ;)
 
  ```
  ./autogen.sh
