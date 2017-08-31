@@ -17,6 +17,11 @@
 * Firefox theme in screenshots is ["Not Quite Black"](https://addons.mozilla.org/en-us/firefox/addon/not-quite-black/)
 * The wallpaper is a [photo of Lake Lucerne](https://interfacelift.com/wallpaper/details/4126/the_overlook_of_lake_lucern.html).
 
+Quick Start for Ubuntu/Debian based distros
+
+$ sudo apt-get install automake autoconf inkscape libcanberra-gtk-module libgdk-pixbuf2.0-dev libglib2.0-dev librsvg2-dev libxml2-utils pkg-config libsass0 sassc
+$ ./regen.sh
+
 
 - JayArc
 
