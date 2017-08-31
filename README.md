@@ -19,8 +19,10 @@
 
 Quick Start for Ubuntu/Debian based distros
 
-$ sudo apt-get install automake autoconf inkscape libcanberra-gtk-module libgdk-pixbuf2.0-dev libglib2.0-dev librsvg2-dev libxml2-utils pkg-config libsass0 sassc
+ ```
+$ sudo apt-get install build-essential automake autoconf inkscape libcanberra-gtk-module libgdk-pixbuf2.0-dev libglib2.0-dev librsvg2-dev libxml2-utils pkg-config libsass0 sassc libnotify-bin
 $ ./regen.sh
+ ```
 
 
 - JayArc
